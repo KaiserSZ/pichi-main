@@ -930,3 +930,24 @@ section[id] {
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.4px;
 }
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px; /* separación real hacia el h2 */
+}
+
+.traduccion {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 6px; /* pegado al nombre */
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0;
+}
