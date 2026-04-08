@@ -970,3 +970,32 @@ section[id] {
   background: #fff;
   color: #000;
 }
+.ubicacion {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ubicacion h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.ubicacion p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.mapa {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.btn-mapa {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}

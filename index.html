@@ -58,21 +58,20 @@
     <div class="hero-content container">
       <p class="hero-tag">Cinco Saltos · Alto Valle</p>
       <h1 class="hero-title">
-  PICHI MAÍN
-  <span class="traduccion">Pequeño Querer</span>
-</h1>
+        PICHI MAÍN
+        <span class="traduccion">Pequeño Querer</span>
+      </h1>
 
-<h2 class="hero-subtitle">
-  Espacio Natural en Cinco Saltos para talleres, encuentros culturales y propuestas de bienestar
-</h2>
+      <h2 class="hero-subtitle">
+        Espacio Natural en Cinco Saltos para talleres, encuentros culturales y propuestas de bienestar
+      </h2>
+
       <div class="hero-buttons">
         <a href="#contacto" class="btn">Consultar disponibilidad</a>
         <a href="#cartelera" class="btn-outline">Ver cartelera</a>
       </div>
     </div>
   </section>
-
-  <!-- CARTELERA -->
 
   <section id="cartelera" class="section section-gallery">
     <div class="container">
@@ -115,13 +114,11 @@
           </p>
 
           <div class="cartelera-extra">
-
             <button class="cartelera-toggle">
               ▼ Ver sinopsis y ficha técnica
             </button>
 
             <div class="cartelera-contenido">
-
               <p class="cartelera-frase">
                 "Tengo cien espejos que son solo espejos, pero después tengo este espejo que él me regaló un día de lluvia y con este espejo puedo meter mi mano y dársela él"
               </p>
@@ -149,7 +146,6 @@
                 Participó de la Fiesta del Teatro Rionegrino 2025 y del ciclo 
                 La Escuela va al Teatro (Neuquén, 2024).
               </p>
-
             </div>
           </div>
         </div>
@@ -160,28 +156,19 @@
       </div>
     </div>
   </section>
+
   <section class="comunidad">
-  <div class="contenedor">
-    <h2>Comunidad Pichi Main</h2>
-    <p>Recibí información anticipada de los próximos eventos (mínimo 3 por mes).</p>
+    <div class="contenedor">
+      <h2>Comunidad Pichi Main</h2>
+      <p>Recibí información anticipada de los próximos eventos (mínimo 3 por mes).</p>
 
-    <a 
-      href="https://wa.me/542996726460?text=Hola!%20Quiero%20recibir%20novedades%20de%20los%20proximos%20eventos%20en%20Pichi%20Main"
-      target="_blank"
-      class="btn-comunidad"
-    >
-      Recibir próximos eventos
-    </a>
-  </div>
-</section>
-
-  <!-- RESTO DEL SITIO SIN MODIFICACIONES -->
-
-  <!-- (A partir de acá sigue EXACTAMENTE tu código original: espacio, eventos, info, galería, contacto, footer y scripts) -->
-
-          
-        </div>
-      </div>
+      <a 
+        href="https://wa.me/542996726460?text=Hola!%20Quiero%20recibir%20novedades%20de%20los%20proximos%20eventos%20en%20Pichi%20Main"
+        target="_blank"
+        class="btn-comunidad"
+      >
+        Recibir próximos eventos
+      </a>
     </div>
   </section>
 
@@ -343,6 +330,34 @@
     </div>
   </section>
 
+  <section class="section section-gallery ubicacion">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Ubicación</p>
+        <h2 class="section-title">Dónde queda Pichi Main</h2>
+        <p class="gallery-intro">
+          A 15 minutos de Neuquén. Un entorno natural, accesible y con identidad propia.
+        </p>
+      </div>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1553.4043825833119!2d-68.0606577745184!3d-38.859734260320714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a35215bce2db5%3A0xc7ab134055209aeb!2sPichi%20Main!5e0!3m2!1ses-419!2sar!4v1775661583985!5m2!1ses-419!2sar"
+          width="100%"
+          height="380"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <a href="https://maps.google.com/?q=Pichi+Main" target="_blank" class="btn-mapa" rel="noopener noreferrer">
+        Cómo llegar
+      </a>
+    </div>
+  </section>
+
   <section id="contacto" class="section section-light">
     <div class="container">
       <div class="section-head">
@@ -361,9 +376,7 @@
           <input type="text" id="nombre" placeholder="Nombre" required>
           <input type="text" id="telefono" placeholder="Teléfono" required>
           <input type="text" id="instagram" placeholder="Instagram (@usuario)" required>
-
           <textarea id="mensaje" placeholder="Contanos tu propuesta" required></textarea>
-
           <button type="submit" class="btn btn-form">Consultar por WhatsApp</button>
         </form>
       </div>
@@ -398,6 +411,12 @@
   >
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
   </a>
+
+  <audio id="ambient-audio" loop>
+    <source src="audio/pichi-main.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="sound-toggle">🔊 Escuchar el espacio</button>
 
   <script>
     const nav = document.querySelector(".nav");
@@ -480,51 +499,42 @@
 
       window.open("https://wa.me/5492996726460?text=" + data, "_blank");
     });
-    
-  </script>
-<script>
-  const toggle = document.querySelector(".cartelera-toggle");
-  const contenido = document.querySelector(".cartelera-contenido");
 
-  toggle.addEventListener("click", function() {
-    if (contenido.style.display === "block") {
-      contenido.style.display = "none";
-      toggle.textContent = "▼ Ver sinopsis y ficha técnica";
-    } else {
-      contenido.style.display = "block";
-      toggle.textContent = "▲ Ocultar información";
-    }
-  });
-</script>
-<!-- AUDIO AMBIENTE -->
-<audio id="ambient-audio" loop>
-  <source src="audio/pichi-main.mp3" type="audio/mpeg">
-</audio>
+    const toggle = document.querySelector(".cartelera-toggle");
+    const contenido = document.querySelector(".cartelera-contenido");
 
-<!-- BOTÓN SONIDO -->
-<button id="sound-toggle">🔊 Escuchar el espacio</button>
-<script>
-  const audio = document.getElementById("ambient-audio");
-  const toggleBtn = document.getElementById("sound-toggle");
-
-  let isPlaying = false;
-
-  toggleBtn.addEventListener("click", async () => {
-    if (!isPlaying) {
-      try {
-        audio.volume = 0.4;
-        await audio.play();
-        isPlaying = true;
-        toggleBtn.textContent = "🔇 Silenciar";
-      } catch (error) {
-        console.log("El navegador bloqueó el audio");
+    toggle.addEventListener("click", function() {
+      if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        toggle.textContent = "▼ Ver sinopsis y ficha técnica";
+      } else {
+        contenido.style.display = "block";
+        toggle.textContent = "▲ Ocultar información";
       }
-    } else {
-      audio.pause();
-      isPlaying = false;
-      toggleBtn.textContent = "🔊 Escuchar el espacio";
-    }
-  });
-</script>
+    });
+
+    const audio = document.getElementById("ambient-audio");
+    const toggleBtn = document.getElementById("sound-toggle");
+
+    let isPlaying = false;
+
+    toggleBtn.addEventListener("click", async () => {
+      if (!isPlaying) {
+        try {
+          audio.volume = 0.4;
+          await audio.play();
+          isPlaying = true;
+          toggleBtn.textContent = "🔇 Silenciar";
+        } catch (error) {
+          console.log("El navegador bloqueó el audio");
+        }
+      } else {
+        audio.pause();
+        isPlaying = false;
+        toggleBtn.textContent = "🔊 Escuchar el espacio";
+      }
+    });
+  </script>
+
 </body>
 </html>
