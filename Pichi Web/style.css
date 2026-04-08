@@ -870,3 +870,40 @@ section[id] {
   font-size: 14px;
   color: #6b6156;
 }
+/* ===============================
+   COMUNIDAD PICHI MAIN
+================================= */
+
+.comunidad {
+  background-color: #0e0e0e;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.comunidad h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.comunidad p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+.btn-comunidad {
+  display: inline-block;
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-comunidad:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+}
