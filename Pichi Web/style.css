@@ -874,36 +874,44 @@ section[id] {
    COMUNIDAD PICHI MAIN
 ================================= */
 
+/* ===============================
+   COMUNIDAD PICHI MAIN (Refinado)
+================================= */
+
 .comunidad {
-  background-color: #0e0e0e;
-  padding: 80px 20px;
+  background: #e6dccb;
+  padding: 90px 20px;
   text-align: center;
 }
 
 .comunidad h2 {
   font-size: 2rem;
-  margin-bottom: 15px;
-  color: #ffffff;
+  margin-bottom: 18px;
+  color: #3f5f45;
 }
 
 .comunidad p {
-  font-size: 1rem;
-  margin-bottom: 30px;
-  color: #cccccc;
+  font-size: 1.05rem;
+  margin-bottom: 35px;
+  color: #5a5149;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-comunidad {
   display: inline-block;
-  background-color: #25D366;
+  background-color: #3f5f45;
   color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 6px;
+  padding: 15px 32px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(63, 95, 69, 0.2);
 }
 
 .btn-comunidad:hover {
-  background-color: #1ebe5d;
+  background-color: #324b37;
   transform: translateY(-2px);
 }
