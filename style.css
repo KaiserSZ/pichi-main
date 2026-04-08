@@ -87,6 +87,7 @@ section[id] {
   font-size: 15px;
   font-weight: 600;
   color: #435545;
+  flex-wrap: wrap;
 }
 
 .menu a {
@@ -547,7 +548,7 @@ section[id] {
   }
 
   .mobile-menu.open {
-    max-height: 420px;
+    max-height: 460px;
   }
 
   .mobile-menu-inner {
@@ -708,6 +709,7 @@ section[id] {
     min-height: 240px;
   }
 }
+
 /* =========================
    CARTELERA
 ========================= */
@@ -765,8 +767,6 @@ section[id] {
   letter-spacing: 0.08em;
 }
 
-/* Responsive cartelera */
-
 @media (max-width: 980px) {
   .cartelera-evento {
     grid-template-columns: 1fr;
@@ -778,6 +778,7 @@ section[id] {
     min-height: 280px;
   }
 }
+
 /* =========================
    MEJORAS CARTELERA
 ========================= */
@@ -787,8 +788,6 @@ section[id] {
   font-weight: 700;
   color: #a24c3c;
 }
-
-/* Animación suave */
 
 .cartelera-evento {
   opacity: 0;
@@ -804,8 +803,6 @@ section[id] {
   }
 }
 
-/* Mobile: afiche primero */
-
 @media (max-width: 980px) {
   .cartelera-evento {
     display: flex;
@@ -817,6 +814,7 @@ section[id] {
     margin-bottom: 25px;
   }
 }
+
 /* =========================
    CARTELERA EXTRA
 ========================= */
@@ -870,12 +868,9 @@ section[id] {
   font-size: 14px;
   color: #6b6156;
 }
-/* ===============================
-   COMUNIDAD PICHI MAIN
-================================= */
 
 /* ===============================
-   COMUNIDAD PICHI MAIN (Refinado)
+   COMUNIDAD PICHI MAIN
 ================================= */
 
 .comunidad {
@@ -915,25 +910,15 @@ section[id] {
   background-color: #324b37;
   transform: translateY(-2px);
 }
-/* ===============================
-   SIGNIFICADO MAPUCHE
-================================= */
 
 /* ===============================
-   SIGNIFICADO MAPUCHE
+   HERO
 ================================= */
 
-.significado-mapuche {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.4px;
-}
 .hero-title {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 30px; /* separación real hacia el h2 */
+  margin-bottom: 30px;
 }
 
 .traduccion {
@@ -941,7 +926,7 @@ section[id] {
   font-size: 0.9rem;
   font-style: italic;
   font-weight: 400;
-  margin-top: 6px; /* pegado al nombre */
+  margin-top: 6px;
   opacity: 0.85;
   letter-spacing: 0.5px;
 }
@@ -951,6 +936,11 @@ section[id] {
   font-weight: 400;
   margin-top: 0;
 }
+
+/* ===============================
+   AUDIO
+================================= */
+
 #sound-toggle {
   position: fixed;
   bottom: 20px;
@@ -970,25 +960,32 @@ section[id] {
   background: #fff;
   color: #000;
 }
+
+/* ===============================
+   UBICACION
+================================= */
+
 .ubicacion {
   padding: 60px 20px;
   text-align: center;
 }
 
-.ubicacion h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.ubicacion .section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.ubicacion p {
-  margin-bottom: 20px;
-  color: #666;
+.ubicacion .section-title,
+.ubicacion .gallery-intro {
+  max-width: 820px;
 }
 
 .mapa {
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 20px;
+  box-shadow: 0 12px 32px rgba(47, 42, 36, 0.10);
 }
 
 .btn-mapa {
