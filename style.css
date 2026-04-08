@@ -915,3 +915,18 @@ section[id] {
   background-color: #324b37;
   transform: translateY(-2px);
 }
+/* ===============================
+   SIGNIFICADO MAPUCHE
+================================= */
+
+/* ===============================
+   SIGNIFICADO MAPUCHE
+================================= */
+
+.significado-mapuche {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.4px;
+}
