@@ -496,5 +496,35 @@
     }
   });
 </script>
+<!-- AUDIO AMBIENTE -->
+<audio id="ambient-audio" loop>
+  <source src="audio/pichi-main.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BOTÓN SONIDO -->
+<button id="sound-toggle">🔊 Escuchar el espacio</button>
+<script>
+  const audio = document.getElementById("ambient-audio");
+  const toggleBtn = document.getElementById("sound-toggle");
+
+  let isPlaying = false;
+
+  toggleBtn.addEventListener("click", async () => {
+    if (!isPlaying) {
+      try {
+        audio.volume = 0.4;
+        await audio.play();
+        isPlaying = true;
+        toggleBtn.textContent = "🔇 Silenciar";
+      } catch (error) {
+        console.log("El navegador bloqueó el audio");
+      }
+    } else {
+      audio.pause();
+      isPlaying = false;
+      toggleBtn.textContent = "🔊 Escuchar el espacio";
+    }
+  });
+</script>
 </body>
 </html>
