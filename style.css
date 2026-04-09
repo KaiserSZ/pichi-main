@@ -918,21 +918,25 @@ section[id] {
 ================================= */
 
 .hero-title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+  line-height: 0.92;
 }
 
 .traduccion {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-style: italic;
-  font-weight: 400;
-  margin-top: 6px;
-  opacity: 0.85;
-  letter-spacing: 0.5px;
+  margin-top: -6px;
+  text-align: center;
+  width: 100%;
+  opacity: 0.95;
+  letter-spacing: 0.4px;
 }
-
 .hero-subtitle {
   font-size: 1.2rem;
   font-weight: 400;
@@ -1221,4 +1225,8 @@ section[id] {
     font-size: 16px;
     padding: 15px 18px;
   }
+}
+.hero-content {
+  align-items: flex-start;
+  text-align: left;
 }
