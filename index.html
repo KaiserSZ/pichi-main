@@ -22,7 +22,6 @@
         <a href="#espacio">El espacio</a>
         <a href="#cartelera">Cartelera</a>
         <a href="#eventos">Eventos</a>
-        <a href="#info">Información</a>
         <a href="#galeria">Galería</a>
         <a href="#ubicacion">Ubicación</a>
         <a href="#contacto">Contacto</a>
@@ -44,7 +43,6 @@
         <a href="#espacio">El espacio</a>
         <a href="#cartelera">Cartelera</a>
         <a href="#eventos">Eventos</a>
-        <a href="#info">Información</a>
         <a href="#galeria">Galería</a>
         <a href="#ubicacion">Ubicación</a>
         <a href="#contacto">Contacto</a>
@@ -228,37 +226,6 @@
     </div>
   </section>
 
-  <section id="info" class="section section-light">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Información clave</p>
-        <h2 class="section-title">Aspectos clave del espacio</h2>
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Ubicación</h3>
-          <p>El espacio se encuentra en Cinco Saltos, en el Alto Valle.</p>
-        </div>
-
-        <div class="card">
-          <h3>Tipo de propuestas</h3>
-          <p>Se priorizan talleres, encuentros culturales, experiencias de bienestar y actividades afines al perfil del lugar.</p>
-        </div>
-
-        <div class="card">
-          <h3>Evaluación previa</h3>
-          <p>Cada consulta se revisa antes de confirmar disponibilidad o avanzar con una fecha.</p>
-        </div>
-
-        <div class="card">
-          <h3>Canal de contacto</h3>
-          <p>Toda la coordinación inicial se realiza de forma directa por WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="galeria" class="section section-gallery">
     <div class="container">
       <div class="section-head">
@@ -360,27 +327,47 @@
     </div>
   </section>
 
-  <section id="contacto" class="section section-light">
+  <section id="contacto" class="section section-light contacto-section">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head contacto-head">
         <p class="eyebrow">Contacto</p>
         <h2 class="section-title">Consultá disponibilidad</h2>
       </div>
 
-      <div class="form-section">
-        <div class="form-text">
-          <p>
-            Completá el formulario y te llevamos directo a WhatsApp con tu consulta lista para enviar.
-          </p>
-        </div>
+      <div class="contacto-shell">
+        <div class="contacto-layout">
+          <div class="contacto-left">
+            <p class="contacto-intro">
+              Completá el formulario y te llevamos directo a WhatsApp con tu consulta lista para enviar.
+            </p>
 
-        <form id="form" class="contact-form">
-          <input type="text" id="nombre" placeholder="Nombre" required>
-          <input type="text" id="telefono" placeholder="Teléfono" required>
-          <input type="text" id="instagram" placeholder="Instagram (@usuario)" required>
-          <textarea id="mensaje" placeholder="Contanos tu propuesta" required></textarea>
-          <button type="submit" class="btn btn-form">Consultar por WhatsApp</button>
-        </form>
+            <div class="contacto-info-stack">
+              <div class="contacto-card">
+                <h3>Evaluación previa</h3>
+                <p>
+                  Cada consulta se revisa antes de confirmar disponibilidad o avanzar con una fecha.
+                </p>
+              </div>
+
+              <div class="contacto-card">
+                <h3>Canal de contacto</h3>
+                <p>
+                  Toda la coordinación inicial se realiza de forma directa por WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacto-right">
+            <form id="form" class="contact-form contacto-form">
+              <input type="text" id="nombre" placeholder="Nombre" required>
+              <input type="text" id="telefono" placeholder="Teléfono" required>
+              <input type="text" id="instagram" placeholder="Instagram (@usuario)" required>
+              <textarea id="mensaje" placeholder="Contanos tu propuesta" required></textarea>
+              <button type="submit" class="btn btn-form">Consultar por WhatsApp</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section>
