@@ -493,12 +493,12 @@ section[id] {
 }
 
 .cartelera-slide {
+  position: absolute;
   inset: 0;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
   pointer-events: none;
 }
-
 .cartelera-slide.active {
   opacity: 1;
   pointer-events: auto;
