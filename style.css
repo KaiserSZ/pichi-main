@@ -597,8 +597,9 @@ section[id] {
 ================================= */
 
 .comunidad {
-  background: #e6dccb;
+  background: #3f5f45;
   padding: 36px 20px;
+  color: #f1eadf;
 }
 
 .comunidad-inner {
@@ -612,18 +613,18 @@ section[id] {
 
 .comunidad-texto h2 {
   font-size: 1.3rem;
-  color: #3f5f45;
   margin-bottom: 4px;
+  color: #f1eadf;
 }
 
 .comunidad-texto p {
   font-size: 0.9rem;
-  color: #5a5149;
+ color: rgba(241, 234, 223, 0.85);
 }
 
 .btn-comunidad {
-  background-color: #3f5f45;
-  color: #fff;
+ background-color: #f1eadf;
+  color: #3f5f45;
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: 600;
