@@ -354,7 +354,8 @@ section[id] {
 
 .card p {
   color: #5a5149;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .gallery-grid {
@@ -490,6 +491,7 @@ section[id] {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
+  overflow: hidden;
 }
 
 .cartelera-slide {
@@ -906,6 +908,44 @@ section[id] {
 
 .footer-icons img:hover {
   transform: scale(1.1);
+}
+.card-img {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.card-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.2) 0%,
+    rgba(0,0,0,0.6) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.card-overlay h3 {
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.card-overlay p {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
 }
 
 /* ===============================
